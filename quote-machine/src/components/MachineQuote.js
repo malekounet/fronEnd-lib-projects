@@ -61,7 +61,7 @@ class MachineQuote extends Component{
           quote: quotesArray[randomNum].quote,
           color: colors[randoColor]
         });
-        // document.getElementByTagName('body').style.backgroundColor = this.state.color
+        document.getElementById('body').style.backgroundColor = this.state.color
       }
       
       render(){
