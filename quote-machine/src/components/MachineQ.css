@@ -1,0 +1,15 @@
+body{
+    background-color: yellow;
+    transition: background-color 1s;
+  }
+  .container-fluid{
+    width: 600px;
+    margin: 7% auto;
+    background-color:white;
+    padding: 22px;
+    border-radius: 5px
+  }
+  .flex-butt{
+    display: flex;
+    justify-content: space-between;
+  }
