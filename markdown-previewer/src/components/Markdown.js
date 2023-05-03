@@ -36,11 +36,11 @@ this is inline text \`<div></div>\`
             <div className="container">
                 <div className="editor">
                     <h1 id="title">Editor</h1>
-                    <textarea value={text} id="editor" onChange={this.onChangeVal} ></textarea>
+                    <textarea value={text == '' ? testes : text} id="editor" onChange={this.onChangeVal} ></textarea>
                 </div>
                 <div className="preview">
                     <h1 id="title" style={{borderBottom: "1px solid white"}}>Preview</h1>
-                    <ReactMarkdown id="preview">{testes}</ReactMarkdown>
+                    <ReactMarkdown id="preview">{text == '' ? testes : text}</ReactMarkdown>
                 </div>
                
                
