@@ -1,0 +1,59 @@
+#root{
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    /* position: absolute; */
+}
+
+.drum-pad{
+    width: 100px;
+    height: 60px;
+    background-color: blueviolet;
+    
+}
+#drum-machine{
+    /* position: absolute; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, 4);
+    gap: 10px;
+    width: 600px;
+    justify-items: center;
+}
+#display{
+    grid-column: 1 / 4;
+    text-align: center;
+    font-size: 33px;
+    color: white;
+    background-color: blueviolet;
+    border-radius: 6px;
+    padding: 9px;
+}
+.drum-pad{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#big-con{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#image{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 0;
+}
